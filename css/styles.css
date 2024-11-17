@@ -3583,6 +3583,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content-about p {
+    max-width: 475px;
     margin-bottom: var(--vspace-2);
 }
 
