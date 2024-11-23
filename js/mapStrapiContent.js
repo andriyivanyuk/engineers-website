@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function fetchDataFromStrapi() {
-  //   const localApi = "http://localhost:1337/api";
-  const productionApiUrl =
-    "https://engineers-admin-0b4f437c3ec6.herokuapp.com/api";
+    const localApi = "http://localhost:1337/api";
+//   const productionApiUrl =
+//     "https://engineers-admin-0b4f437c3ec6.herokuapp.com/api";
 
-  const fetchHero = fetch(`${productionApiUrl}/hero`).then((response) =>
+  const fetchHero = fetch(`${localApi}/hero`).then((response) =>
     response.json()
   );
-  const fetchServices = fetch(`${productionApiUrl}/services`).then((response) =>
+  const fetchServices = fetch(`${localApi}/services`).then((response) =>
     response.json()
   );
-  const fetchNavigation = fetch(`${productionApiUrl}/navigations`).then(
+  const fetchNavigation = fetch(`${localApi}/navigations`).then(
     (response) => response.json()
   );
 
